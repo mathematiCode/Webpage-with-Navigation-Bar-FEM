@@ -1,0 +1,182 @@
+/* Reset from Josh Cumeau */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* End of Reset */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 1em;
+}
+
+.arrow-icon {
+    background-image: image("./images/icon-arrow-down.svg");
+}
+
+.cta,
+.logos {
+    text-align: center;
+    width: clamp(100%, 450px, 650px);
+    padding: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero {
+    width: clamp(100%, 500px, 500px);
+    max-height: 50%;
+}
+
+#learn-more {
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.info {
+    height: 100%;
+}
+
+body {
+    font-size: minmax(18px, 24px);
+}
+
+@media(min-width:900px) {
+    .page {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+    #hero {
+        width: clamp(50%, 35%, 35%);
+        height: auto;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .cta {
+        text-align: start;
+    }
+    .primary-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+    #mobile-nav-toggle {
+        display: none;
+    }
+}
+
+/* From The A11Y Project Website, hides elements from view so they can still be read by screenreaders */
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.primary-nav {
+    display: none;
+}
+
+.primary-nav[data-visible] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 2em;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+    flex-grow: 1;
+    justify-self: flex-end;
+    grid-gap: 3em;
+}
+
+.icon-close {
+    display: none;
+}
+
+#mobile-nav-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+}
