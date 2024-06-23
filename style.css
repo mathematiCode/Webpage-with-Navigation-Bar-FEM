@@ -179,4 +179,6 @@ body {
     border: none;
     padding: 0.5em;
     cursor: pointer;
+    position: fixed;
+    right: 10px;
 }

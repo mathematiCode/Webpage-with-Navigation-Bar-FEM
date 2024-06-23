@@ -1,76 +1,93 @@
 <!DOCTYPE html>
+<title>Snap - Make Remote Work</title>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-
-  <title>Snap - Make Remote Work</title>
-
-</head>
-
-<body>
-
-  <div class="header">
-    <img id="snap-logo" src="./images/logo.svg">
-    <button id="mobile-nav-toggle" aria-controls="primary-navigation">
-      <img src="./images/icon-menu.svg" alt="" aria-hidden="true" class="icon-hamburger">
-      <img src="./images/icon-close-menu.svg" alt="" aria-hidden="true" class="icon-close">
-      <span class="visually-hidden">Menu</span>
-    </button>
-    <div class="primary-nav" id="primary-navigation">
-      <div>
-        Features
-        <div class="arrow-icon"></div>
-      </div>
-      <div>
-        Company
-        <div class="arrow-icon"></div>
-      </div>
-      <div>
-        Careers
-      </div>
-      <div>
-        About
-      </div> Login
-      <button id="register">Register </button>
-    </div>
-  </div>
-
-  <div class="page">
-
-    <img id="hero" src="./images/image-hero-desktop.png ">
-
-    <div id="info">
-      <div class="cta">
-        <h1>Make remote work </h1>
-        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-        <button id="learn-more">Learn more </button>
-      </div>
-
-      <div class="logos">
-        <img src="./images/client-databiz.svg" alt="databiz logo">
-        <img src="./images/client-audiophile.svg" alt="audiophile logo">
-        <img src="./images/client-meet.svg" alt="meet logo">
-        <img src="./images/client-maker.svg" alt="maker logo">
+  <body>
+    <div class="header">
+      <img id="snap-logo" src="./images/logo.svg" />
+      <button id="mobile-nav-toggle" aria-controls="primary-navigation">
+        <img
+          src="./images/icon-menu.svg"
+          alt=""
+          aria-hidden="true"
+          class="icon-hamburger"
+        />
+        <img
+          src="./images/icon-close-menu.svg"
+          alt=""
+          aria-hidden="true"
+          class="icon-close"
+        />
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <div class="primary-nav" id="primary-navigation">
+        <div>
+          Features
+          <div class="arrow-icon"></div>
+        </div>
+        <div>
+          Company
+          <div class="arrow-icon"></div>
+        </div>
+        <div>Careers</div>
+        <div>About</div>
+        Login
+        <button id="register">Register</button>
       </div>
     </div>
 
-  </div>
+    <div class="page">
+      <picture>
+        <source
+          srcset="./images/image-hero-mobile.png"
+          media="(max-width: 600px)"
+        />
+        <source
+          srcset="./images/image-hero-desktop.jpg"
+          media="(min-width: 601px)"
+        />
+        <img
+          src="./images/image-hero-desktop.jpg"
+          alt="Man working on a laptop"
+        />
+      </picture>
 
+      <div id="info">
+        <div class="cta">
+          <h1>Make remote work</h1>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+          <button id="learn-more">Learn more</button>
+        </div>
 
+        <div class="logos">
+          <img src="./images/client-databiz.svg" alt="databiz logo" />
+          <img src="./images/client-audiophile.svg" alt="audiophile logo" />
+          <img src="./images/client-meet.svg" alt="meet logo" />
+          <img src="./images/client-maker.svg" alt="maker logo" />
+        </div>
+      </div>
+    </div>
 
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-    <a href="#"> Julianna Messineo</a>.
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#"> Julianna Messineo</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
